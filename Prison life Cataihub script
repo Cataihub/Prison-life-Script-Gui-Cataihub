@@ -4,27 +4,6 @@ local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shl
 
 local Window = OrionLib:MakeWindow({Name = "Cataihub | Prison life", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
-OrionLib:MakeNotification({
-	Name = "Hey!",
-	Content = "you are is welcome!",
-	Image = "rbxassetid://4483345998",
-	Time = 1
-})
-
-OrionLib:MakeNotification({
-	Name = "Subscribe!",
-	Content = "you is check Youtube Channel: Cataihub!",
-	Image = "rbxassetid://4483345998",
-	Time = 3
-})
-
-OrionLib:MakeNotification({
-	Name = "Credit",
-	Content = "By: Cataihub",
-	Image = "rbxassetid://4483345998",
-	Time = 3.2
-})
-
 
 -- player tab 
 
