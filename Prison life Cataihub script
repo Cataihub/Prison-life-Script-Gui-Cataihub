@@ -5,43 +5,25 @@ local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shl
 local Window = OrionLib:MakeWindow({Name = "Cataihub | Prison life", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
 
--- player tab 
+-- Admin command tab 
 
 local Tab = Window:MakeTab({
-	Name = "Player",
-	Icon = "rbxassetid://4483345998",
+	Name = "Admin commands",
+	Icon = "rbxassetid://2795572803",
 	PremiumOnly = false
 })
 
 local Section = Tab:AddSection({
-	Name = "Movement"
+	Name = "Admin commands"
 })
 
-Tab:AddSlider({
-	Name = "Walkspeed",
-	Min = 16,
-	Max = 500,
-	Default = 5,
-	Color = Color3.fromRGB(255,255,255),
-	Increment = 1,
-	ValueName = "Walkspeed",
-	Callback = function(Value)
-		game.Players.LocalPlayer.Character.Humanoid.Walkspeed = Value
-	end    
+Tab:AddButton({
+	Name = "Cataihub Yield FE (New)",
+	Callback = function()
+      		loadstring(game:HttpGet(('https://raw.githubusercontent.com/Cataihub/Cataihub-yield/main/Cataihub%20yield%20FE')))()
+  	end    
 })
 
-Tab:AddSlider({
-	Name = "Jump Heights",
-	Min = 50,
-	Max = 250,
-	Default = 5,
-	Color = Color3.fromRGB(255,255,255),
-	Increment = 1,
-	ValueName = "Heights",
-	Callback = function(Value)
-		game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
-	end    
-})
 
 
 -- delete doors tab 
